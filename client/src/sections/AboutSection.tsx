@@ -2,8 +2,10 @@ import { useInView } from '@/hooks/use-intersection-observer';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import profileImage from '../assets/photo_2025-04-21_21-23-59.jpg';
+import { useLocation } from 'wouter'; 
 
 const AboutSection = () => {
+  const [, setLocation] = useLocation();
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, threshold: 0.1 });
 
@@ -139,10 +141,10 @@ const AboutSection = () => {
               className="flex flex-wrap gap-4"
               variants={itemVariants}
             >
-              <a href="/research" className="bg-[#5D3E7C] hover:bg-[#FF65A3] text-white font-medium px-6 py-2 rounded-md transition-colors font-space inline-flex items-center">
+              <a href="/research"  onClick={(e) => {e.preventDefault(); setLocation('/research');}} className="bg-[#5D3E7C] hover:bg-[#FF65A3] text-white font-medium px-6 py-2 rounded-md transition-colors font-space inline-flex items-center">
                 <i className="ri-article-line mr-2"></i> Research Papers
               </a>
-              <a href="/cv" className="border border-[#FF65A3] text-[#FF65A3] hover:bg-[#FF65A3] hover:text-white font-medium px-6 py-2 rounded-md transition-colors font-space inline-flex items-center">
+              <a href="/cv"  onClick={(e) => {e.preventDefault(); setLocation('/cv');}} className="border border-[#FF65A3] text-[#FF65A3] hover:bg-[#FF65A3] hover:text-white font-medium px-6 py-2 rounded-md transition-colors font-space inline-flex items-center">
                 <i className="ri-file-text-line mr-2"></i> View CV
               </a>
             </motion.div>

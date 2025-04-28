@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { fadeIn, staggerContainer } from '@/lib/animations';
 import { useState } from 'react';
 
+
 type BlogPost = {
   id: number;
   title: string;
@@ -140,9 +141,9 @@ const BlogSection = () => {
                       </div>
                     </CardContent>
                     <CardFooter>
-                      <Button className="bg-[#5D3E7C] text-white hover:bg-[#FF65A3] w-full">
-                        Read More
-                      </Button>
+                        <Button className="bg-[#5D3E7C] text-white hover:bg-[#FF65A3] w-full">
+                          Read More
+                        </Button>
                     </CardFooter>
                   </Card>
                 </motion.div>
