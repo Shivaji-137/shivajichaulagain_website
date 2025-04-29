@@ -2,7 +2,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Switch, Route, Router as WouterRouter } from "wouter"; // Import Wouter Router
+import { HashRouter, Routes, Route } from "react-router-dom"; // <-- CHANGED
 import HomePage from "@/pages/HomePage";
 import ProjectsPage from "@/pages/ProjectsPage";
 import ResearchPage from "@/pages/ResearchPage";
@@ -12,17 +12,17 @@ import ContactPage from "@/pages/ContactPage";
 import NotFound from "@/pages/not-found";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
-function Routes() {
+function AppRoutes() { // Renamed to AppRoutes to avoid confusion
   return (
-    <Switch>
-      <Route path="/" component={HomePage} />
-      <Route path="/projects" component={ProjectsPage} />
-      <Route path="/research" component={ResearchPage} />
-      <Route path="/blog" component={BlogPage} />
-      <Route path="/cv" component={CVPage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route component={NotFound} />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/research" element={<ResearchPage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/cv" element={<CVPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="*" element={<NotFound />} /> {/* Fallback for 404 */}
+    </Routes>
   );
 }
 
@@ -32,9 +32,9 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          <WouterRouter base="/shivajichaulagain_website/">
-            <Routes />
-          </WouterRouter>
+          <HashRouter> {/* <-- CHANGED */}
+            <AppRoutes />
+          </HashRouter>
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
