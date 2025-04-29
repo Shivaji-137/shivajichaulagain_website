@@ -1,5 +1,4 @@
 # GitHub Actions workflow for building and deploying Vite project to GitHub Pages 
-
 name: Deploy Vite Project to GitHub Pages
 
 on:
