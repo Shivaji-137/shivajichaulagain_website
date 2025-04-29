@@ -108,13 +108,13 @@ const AboutSection = () => {
 
             <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>
               <button
-                onClick={() => navigate('/#/research')}
+                onClick={() => navigate('/research')}
                 className="bg-[#5D3E7C] hover:bg-[#FF65A3] text-white font-medium px-6 py-2 rounded-md transition-colors font-space inline-flex items-center"
               >
                 <i className="ri-article-line mr-2"></i> Research Papers
               </button>
               <button
-                onClick={() => navigate('/#/cv')}
+                onClick={() => navigate('/cv')}
                 className="border border-[#FF65A3] text-[#FF65A3] hover:bg-[#FF65A3] hover:text-white font-medium px-6 py-2 rounded-md transition-colors font-space inline-flex items-center"
               >
                 <i className="ri-file-text-line mr-2"></i> View CV
