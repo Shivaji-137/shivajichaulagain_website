@@ -2,7 +2,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router as WouterRouter } from "wouter"; // Import Wouter Router
 import HomePage from "@/pages/HomePage";
 import ProjectsPage from "@/pages/ProjectsPage";
 import ResearchPage from "@/pages/ResearchPage";
@@ -12,7 +12,7 @@ import ContactPage from "@/pages/ContactPage";
 import NotFound from "@/pages/not-found";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
-function Router() {
+function Routes() {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
@@ -32,7 +32,9 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <WouterRouter base="/shivajichaulagain_website">
+            <Routes />
+          </WouterRouter>
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
