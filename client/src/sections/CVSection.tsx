@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { fadeIn, staggerContainer } from '@/lib/animations';
 import { Separator } from "@/components/ui/separator";
+import { useNavigate } from 'react-router-dom';
 
 // Import the CV PDF - we need to set this up properly in the project
 // import cvPdf from "@assets/shivajiCV.pdf";
-const mainlink = "shivajichaulagain_website"
+const navigate = useNavigate();
 const education = [
   {
     degree: "Undergraduate in Physics",
@@ -569,8 +570,8 @@ const CVSection = () => {
             <p className="text-gray-300 mb-6">
               Want to discuss potential collaborations or have questions about my experience?
             </p>
-            <Button variant="link" className="bg-[#5D3E7C] text-white hover:bg-[#FF65A3] px-8">
-              <a href='\contact'>Contact Me</a>
+            <Button variant="link" className="bg-[#5D3E7C] text-white hover:bg-[#FF65A3] px-8" onclick={()=> navigate('/contact')}>
+              Contact Me
             </Button>
           </motion.div>
         </motion.div>
