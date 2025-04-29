@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload the "docs" directory (as specified in vite.config.ts)
-          path: './dist/public'
+          path: './dist'
 
   # Deployment job
   deploy:
