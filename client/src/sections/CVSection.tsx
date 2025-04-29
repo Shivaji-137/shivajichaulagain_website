@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 
 // Import the CV PDF - we need to set this up properly in the project
 // import cvPdf from "@assets/shivajiCV.pdf";
-
+const mainlink = "shivajichaulagain_website"
 const education = [
   {
     degree: "Undergraduate in Physics",
@@ -277,7 +277,7 @@ const CVSection = () => {
                     <p className="text-gray-300">{cert.issuer}</p>
                     <p className="text-gray-400 text-sm mt-2">{cert.date}</p>
                     <a 
-                    href="/certificates/Quantum_computing_certificate.png"
+                    href="/shivajichaulagain_website/certificates/Quantum_computing_certificate.png"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -301,7 +301,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Coursera</p>
                   <p className="text-gray-400 text-sm mt-2">Feb 28 2024</p>
                   <a 
-                    href="/certificates/machineLearningwithPython_certificate.pdf"
+                    href="/shivajichaulagain_website/certificates/machineLearningwithPython_certificate.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -315,7 +315,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Linkedin Learning</p>
                   <p className="text-gray-400 text-sm mt-2">Feb 05 2025</p>
                   <a 
-                    href="/certificates/CertificateOfCompletion_Complete Your First Project in SQL.pdf"
+                    href="/shivajichaulagain_website/certificates/CertificateOfCompletion_Complete Your First Project in SQL.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -329,7 +329,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Coursera</p>
                   <p className="text-gray-400 text-sm mt-2">March 2 2024</p>
                   <a 
-                    href="/certificates/dataAnalysisWithPythonCoursera_certificate.pdf"
+                    href="/shivajichaulagain_website/certificates/dataAnalysisWithPythonCoursera_certificate.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -342,7 +342,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Coursera</p>
                   <p className="text-gray-400 text-sm mt-2">March 15 2024</p>
                   <a 
-                    href="/certificates/introduction_to_deepLearning_withKeras_certificate.pdf"
+                    href="/shivajichaulagain_website/certificates/introduction_to_deepLearning_withKeras_certificate.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -355,7 +355,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Great Learning Academy</p>
                   <p className="text-gray-400 text-sm mt-2">March 2024</p>
                   <a 
-                    href="/certificates/great_learning_IntroductiontoR_certificate.jpg"
+                    href="/shivajichaulagain_website/certificates/great_learning_IntroductiontoR_certificate.jpg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -368,7 +368,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Great Learning Academy</p>
                   <p className="text-gray-400 text-sm mt-2">March 2024</p>
                   <a 
-                    href="/certificates/great_learning_certificateData_visualization_with_R.jpg"
+                    href="/shivajichaulagain_website/certificates/great_learning_certificateData_visualization_with_R.jpg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -381,7 +381,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Coursera</p>
                   <p className="text-gray-400 text-sm mt-2">July 28 2024</p>
                   <a 
-                    href="/certificates/CourseraAdvancedLearningALgorithm.pdf"
+                    href="/shivajichaulagain_website/certificates/CourseraAdvancedLearningALgorithm.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -394,7 +394,7 @@ const CVSection = () => {
                   <p className="text-gray-300">OpenCV University</p>
                   <p className="text-gray-400 text-sm mt-2">August 7 2024</p>
                   <a 
-                    href="/certificates/OpenCV Free OpenCV Bootcamp Certificate _ OpenCV.pdf"
+                    href="/shivajichaulagain_website/certificates/OpenCV Free OpenCV Bootcamp Certificate _ OpenCV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -407,7 +407,7 @@ const CVSection = () => {
                   <p className="text-gray-300">MathWorks Training Services</p>
                   <p className="text-gray-400 text-sm mt-2">November 1 2024</p>
                   <a 
-                    href="/certificates/matlabbasictrainingcourse_certificate.pdf"
+                    href="/shivajichaulagain_website/certificates/matlabbasictrainingcourse_certificate.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -421,7 +421,7 @@ const CVSection = () => {
                   <p className="text-gray-300">Linkedin Learning</p>
                   <p className="text-gray-400 text-sm mt-2">Jan 28, 2025</p>
                   <a 
-                    href="/certificates/CertificateOfCompletion_Building Computer Vision Applications with Python.pdf"
+                    href="/shivajichaulagain_website/certificates/CertificateOfCompletion_Building Computer Vision Applications with Python.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
@@ -454,7 +454,7 @@ const CVSection = () => {
                   <p className="text-gray-300">SBMAC, Brazil</p>
                   <p className="text-gray-400 text-sm mt-2">Oct 20, 2023 (Online)</p>
                   <a 
-                    href="/certificates/wavelet_brazil_certificate"
+                    href="/shivajichaulagain_website/certificates/wavelet_brazil_certificate"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FF65A3] hover:text-[#5D3E7C] text-sm mt-2 inline-flex items-center"
