@@ -2,7 +2,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { HashRouter, Routes, Route } from "react-router-dom"; // <-- CHANGED
+import { Routes, Route } from "react-router-dom";
 import HomePage from "@/pages/HomePage";
 import ProjectsPage from "@/pages/ProjectsPage";
 import ResearchPage from "@/pages/ResearchPage";
@@ -12,7 +12,7 @@ import ContactPage from "@/pages/ContactPage";
 import NotFound from "@/pages/not-found";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
-function AppRoutes() { // Renamed to AppRoutes to avoid confusion
+function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
@@ -21,7 +21,7 @@ function AppRoutes() { // Renamed to AppRoutes to avoid confusion
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/cv" element={<CVPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route path="*" element={<NotFound />} /> {/* Fallback for 404 */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
@@ -32,9 +32,7 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          <HashRouter> {/* <-- CHANGED */}
-            <AppRoutes />
-          </HashRouter>
+          <AppRoutes />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
