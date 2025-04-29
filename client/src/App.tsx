@@ -32,7 +32,7 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          <WouterRouter base="/shivajichaulagain_website">
+          <WouterRouter base="/shivajichaulagain_website/">
             <Routes />
           </WouterRouter>
         </TooltipProvider>
